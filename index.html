@@ -714,7 +714,7 @@
         <div class="hero-content">
             <h1>O SEGREDO DOS ESTUDOS</h1>
             <p class="subtitle">Descubra o Método Comprovado que Multiplica Seu Aprendizado por 3x em Apenas 30 Dias</p>
-            <button class="cta-primary" onclick="scrollToCTA()">🚀 QUERO ESTUDAR MELHOR AGORA</button>
+            <a href="https://pay.kirvano.com/41b84924-3bf8-4bdf-992c-62198a41f7d0" class="cta-primary">🚀 QUERO ESTUDAR MELHOR AGORA</a>
         </div>
     </section>
 
@@ -881,8 +881,8 @@
     <!-- CTA Section -->
     <section class="cta-section" id="cta">
         <div class="cta-content">
-            <h2>Chegou Sua Hora de Transformar Seus Estudos!</h2>
-            <p>Oferta Especial por Tempo Limitado - Garanta Seu Acesso Agora</p>
+            <h2>Comece Sua Transformação Hoje!</h2>
+            <p>Junte-se aos milhares de estudantes que já transformaram suas vidas</p>
             
             <div class="countdown">
                 <div class="countdown-item">
@@ -899,8 +899,9 @@
                 </div>
             </div>
             
-            <button class="cta-secondary" onclick="handleCTA()">✨ GARANTIR MINHA VAGA AGORA</button>
-            <p style="margin-top: 1.5rem; font-size: 0.9rem;">🔒 Pagamento 100% Seguro | 🎁 Bônus Exclusivos | ⚡ Acesso Imediato</p>
+            <p style="margin-top: 1rem; font-size: 1rem; opacity: 0.9;">⏰ Oferta Especial termina em breve!</p>
+            
+            <a href="https://pay.kirvano.com/41b84924-3bf8-4bdf-992c-62198a41f7d0" class="cta-secondary">✨ GARANTIR MINHA VAGA AGORA</a>
         </div>
     </section>
 
@@ -916,7 +917,9 @@
 
     <!-- Floating CTA -->
     <div class="floating-cta" id="floatingCTA">
-        <button onclick="handleCTA()">🚀 COMEÇAR AGORA</button>
+        <a href="https://pay.kirvano.com/41b84924-3bf8-4bdf-992c-62198a41f7d0" style="text-decoration: none;">
+            <button>💎 GARANTIR VAGA</button>
+        </a>
     </div>
 
     <script>
@@ -1004,17 +1007,6 @@
         }
 
         updateCountdown();
-
-        // Smooth scroll to CTA
-        function scrollToCTA() {
-            document.getElementById('cta').scrollIntoView({ behavior: 'smooth' });
-        }
-
-        // CTA Click Handler
-        function handleCTA() {
-            alert('🎉 Parabéns! Você está a um passo de transformar seus estudos!\n\nEm um projeto real, aqui você seria redirecionado para a página de checkout.');
-            // Em produção: window.location.href = 'https://sua-pagina-de-checkout.com';
-        }
 
         // Parallax effect for hero section
         window.addEventListener('scroll', () => {
