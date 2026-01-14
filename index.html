@@ -714,7 +714,7 @@
         <div class="hero-content">
             <h1>O SEGREDO DOS ESTUDOS</h1>
             <p class="subtitle">Descubra o Método Comprovado que Multiplica Seu Aprendizado por 3x em Apenas 30 Dias</p>
-            <a href="https://pay.kirvano.com/41b84924-3bf8-4bdf-992c-62198a41f7d0" class="cta-primary">🚀 QUERO ESTUDAR MELHOR AGORA</a>
+            <button onclick="scrollToFinalCTA()" class="cta-primary">🚀 QUERO ESTUDAR MELHOR AGORA</button>
         </div>
     </section>
 
@@ -917,9 +917,7 @@
 
     <!-- Floating CTA -->
     <div class="floating-cta" id="floatingCTA">
-        <a href="https://pay.kirvano.com/41b84924-3bf8-4bdf-992c-62198a41f7d0" style="text-decoration: none;">
-            <button>💎 GARANTIR VAGA</button>
-        </a>
+        <button onclick="scrollToFinalCTA()">💎 GARANTIR VAGA</button>
     </div>
 
     <script>
@@ -1027,6 +1025,11 @@
         document.querySelectorAll('.testimonial').forEach((testimonial, index) => {
             testimonial.style.animationDelay = `${index * 0.15}s`;
         });
+
+        function scrollToFinalCTA() {
+            const ctaSection = document.getElementById('cta');
+            ctaSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
     </script>
 </body>
 </html>
